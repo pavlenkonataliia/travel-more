@@ -1,0 +1,453 @@
+$medium: 640px;
+$large: 1024px;
+$primary-color: #5474fd;;
+$text-color: #e8e8e8;;
+$body-font-family:'Raleway', sans-serif;
+
+@import "normalize";
+@import "layout";
+@import "elements";
+
+
+@import url('https://fonts.googleapis.com/css?family=Aleo|Josefin+Sans:400,700&display=swap');
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{	
+	font: 400 14px/1.5 'Josefin Sans', sans-serif;
+	color: $text-color;
+	border: 15px solid #fff;
+}
+
+a{
+	color: $primary-color;
+	text-decoration: none;
+	&:hover{
+		color: rgba($primary-color, 0.7);
+	}
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0 0 30px;
+	line-height: 1.2;
+}
+h1{	
+	color: #ffffff;
+	font-family: "Josefin Sans";
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 26px;
+	text-transform: uppercase;	
+	letter-spacing: 4.8px;
+	margin-bottom: 16px;
+	letter-spacing: 3px;
+}
+h2{
+	font-size: 28px;
+}
+h3{
+	font-size: 18px;
+}
+h4{
+	font-size: 12px;
+}
+h5, h6{
+	font-size: 18px;
+}
+
+p{
+	margin: 0 0 25px;
+}
+
+
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1150px;
+
+}
+
+header{
+	height: 100vh;
+}
+
+.ba-header-start{
+	background: #fff url(../img/Image.jpg) no-repeat 50%;
+	background-size: cover;
+	min-width: 100%;	
+	margin-top: 100px;
+	padding: 276px 0;
+	text-align: center;
+	p{		
+		color: #ffffff;
+		font-family: "Josefin Sans";
+		font-size: 22px;
+		font-weight: 400;
+		line-height: 26px;		
+		letter-spacing: 5.2px;
+		padding-bottom: 20px;
+	}
+
+	form{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		// padding-bottom: px;
+	}
+	
+	&__input{
+		width: 502px;
+		height: 60px;
+		background-color: #ffffff;
+		text-align: center;
+		padding: 0;
+		margin-right: -5px;
+		border: 0;
+
+		&::placeholder{
+			color: #999999;
+			font-family: "Josefin Sans";
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 26px;
+			/* Text style for "Search You" */
+			letter-spacing: 1.8px;
+		}	
+	}
+	&__value{
+		width: 150px;
+		height: 60px;
+		// border: 2px solid #ffffff;
+		background-color: #5474fd;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		p{
+			color: #ffffff;
+			font-family: Aleo;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 26px;
+			text-transform: uppercase;
+			/* Text style for "Search" */
+			letter-spacing: 1.4px;
+			padding: 0 17px;
+			margin: 0;
+		}
+
+		
+	}
+}
+.ba-header-end{
+	background: $primary-color;
+	
+}
+
+.ba-header-menu{	
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0;
+	
+
+}
+
+
+
+.ba-menu{
+	display: flex;
+	margin: 0;
+	padding: 0;
+	
+	a{
+		
+		color: #fff;
+		font-family: Aleo;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 26px;
+		text-transform: uppercase;
+
+	}
+}
+.ba-menu li{
+	padding-left: 40px;
+	line-height: 1;
+	list-style-type: none;
+}
+
+.ba-section{
+	&--intro{
+		background: #fff url(../img/bg-intro.jpg) no-repeat 50%;
+		padding: 118px 0 115px 0;
+		background-size: cover;
+	}
+	&--options{		
+		background:  #333333 url(../img/Shape_1.png) no-repeat 48% 14%;
+		padding: 95px 0 50px;
+	}
+	&--spain-1{
+		background:  #333333 url(../img/spain1.jpg) no-repeat 50%;
+		padding: 230px 0 90px;
+		background-size: cover;
+
+	}
+	&--spain-2{
+		background:  #333333 url(../img/spain2.png) no-repeat 50%;
+		padding: 230px 0 100px;
+		background-size: cover;
+
+	}
+	&--tourist{
+		background:  #333333 url(../img/bg-tourist.jpg) no-repeat 50%;
+		padding: 140px 0 200px;
+		background-size: cover;
+		
+	}
+}
+
+.ba-intro-inner{
+	h2{
+		color: #ffffff;
+		font-family: Aleo;
+		font-size: 36px;
+		font-weight: 400;
+		line-height: 26px;
+		padding: 92px 0 30px;
+	}
+	p{
+		color: #e8e8e8;
+		font-family: "Josefin Sans";
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 26px;
+		/* Text style for "T, ion and" */
+		letter-spacing: 1px;
+	}
+	a{
+		background-color: #5474fd;
+		padding: 0;
+		margin: 0;		
+		color: #fff; 
+		text-align: center;
+		width: 225px;
+		height: 60px;
+		font-family: Aleo;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 26px;
+		text-transform: uppercase;
+		/* Text style for "Explore Pl" */
+		letter-spacing: 1.2px;
+		align-items: center;
+		margin-top: 50px;
+	}
+}
+
+.ba-button{
+	background-color: #5474fd;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+}
+
+.img-1{
+	padding-left: 66px;
+	display: block;
+	margin-bottom: 6px;
+}
+
+.img-2{
+	padding-left: 188px;
+}
+
+.ba-options-content{
+	display: flex;
+	justify-content: space-around;
+}
+.ba-options-duo{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	p{
+		color: #e8e8e8;
+		font-family: Aleo;
+		font-size: 36px;
+		font-weight: 400;
+		line-height: 26px;
+		padding: 40px 0;
+	}
+	
+}
+
+.ba-spain-1{
+	background-color: #232323;
+	opacity: 0.9;
+	padding: 40px 35px 45px;
+	h4{
+		color: #e8e8e8;
+font-family: "Josefin Sans";
+font-size: 20px;
+font-weight: 400;
+line-height: 26px;
+/* Text style for "Spain" */
+letter-spacing: 1.5px;
+	}
+	p{
+		color: #e8e8e8;
+font-family: "Josefin Sans";
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+
+	}
+
+	h3{
+		color: #ffffff;
+font-family: "Josefin Sans";
+font-size: 20px;
+font-weight: 400;
+line-height: 26px;
+text-transform: uppercase;
+	}
+	a{
+		background-color: #5474fd;
+		padding: 0;
+		margin: 0;		
+		color: #fff; 
+		text-align: center;
+		width: 225px;
+		height: 60px;
+		font-family: Aleo;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 26px;
+		text-transform: uppercase;
+		/* Text style for "Explore Pl" */
+		letter-spacing: 1.2px;
+		align-items: center;
+		margin-top: 40px;
+	}
+}
+
+.ba-spain-2{
+	background-color: #232323;
+	opacity: 0.9;
+	padding: 40px 35px 45px;
+	transform: translateX(580px);
+		h4{
+			color: #e8e8e8;
+	font-family: "Josefin Sans";
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 26px;
+	/* Text style for "Spain" */
+	letter-spacing: 1.5px;
+		}
+		p{
+			color: #e8e8e8;
+	font-family: "Josefin Sans";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+		}
+	
+		h3{
+			color: #ffffff;
+	font-family: "Josefin Sans";
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 26px;
+	text-transform: uppercase;
+		}
+		a{
+			background-color: #5474fd;
+			padding: 0;
+			margin: 0;		
+			color: #fff; 
+			text-align: center;
+			width: 225px;
+			height: 60px;
+			font-family: Aleo;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 26px;
+			text-transform: uppercase;
+			/* Text style for "Explore Pl" */
+			letter-spacing: 1.2px;
+			align-items: center;
+			margin-top: 40px;
+		}
+
+}
+.ba-container{
+	h2{
+		color: #ffffff;
+font-family: Aleo;
+font-size: 36px;
+font-weight: 400;
+line-height: 26px;
+text-align: center;
+padding-bottom: 100px;
+	}
+}
+
+.ba-tourist-2{
+	background-color: #333333;
+	padding: 50px;
+	h3{
+		color: #fefefe;
+font-family: "Josefin Sans";
+font-size: 20px;
+font-weight: 400;
+line-height: 26px;
+text-transform: uppercase;
+	}
+	p{
+		color: #e8e8e8;
+font-family: "Josefin Sans";
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+
+	}
+}
+
+footer{
+	
+background-color: #232323;
+	padding: 140px 0 200px;
+	background-size: cover;
+	text-align: center;
+	color: #ffffff;
+font-family: "Josefin Sans";
+font-size: 24px;
+font-weight: 700;
+line-height: 26px;
+text-transform: uppercase;
+p{
+	color: #ffffff;
+font-family: "Josefin Sans";
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+/* Text style for "S, afe Tra" */
+letter-spacing: 1.6px;
+}
+}
+
+
+
+
+
+
+
+
+
